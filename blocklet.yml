@@ -1,0 +1,30 @@
+name: rpgmaker-demo
+version: 1.0.2
+main: www
+author:
+  name: Arcblock
+license: MIT
+files:
+  - www
+description: >-
+  RPG Maker Demo Blocklet, a simple web based RPG game.
+group: static
+specVersion: 1.0.1
+did: zNKgWcmmxsDwP8SdgM2b2sqvXxWBELpZxtHL
+community: ''
+documentation: ''
+homepage: ''
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: tcp
+environments: []
+screenshots: []
+scripts: {}
+timeout:
+  start: 10
+capabilities:
+  dynamicPathPrefix: false
