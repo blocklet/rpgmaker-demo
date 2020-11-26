@@ -1,0 +1,12 @@
+{
+  "name": "rpgmaker-demo",
+  "version": "1.0.2",
+  "repository": "git@github.com:blocklet/rpgmaker-demo.git",
+  "author": "Arcblock",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .blocklet",
+    "bundle": "npm run clean && abtnode bundle --create-release",
+    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
+  }
+}
