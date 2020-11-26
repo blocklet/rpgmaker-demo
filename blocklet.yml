@@ -1,16 +1,18 @@
 name: rpgmaker-demo
-version: 1.0.2
-main: www
+version: 1.0.3
+repository:
+  type: git
+  url: 'git+ssh://git@github.com/blocklet/rpgmaker-demo.git'
 author:
   name: Arcblock
 license: MIT
+main: www
 files:
   - www
-description: >-
-  RPG Maker Demo Blocklet, a simple web based RPG game.
+description: 'RPG Maker Demo Blocklet, a simple web based RPG game.'
 group: static
 specVersion: 1.0.1
-did: zNKgWcmmxsDwP8SdgM2b2sqvXxWBELpZxtHL
+did: z8ia4ejtwVATdwMqF5f1uSjHkhp6K2t6DCJGR
 community: ''
 documentation: ''
 homepage: ''
