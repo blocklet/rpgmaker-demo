@@ -5,14 +5,11 @@
 
 [RPG Maker](https://www.rpgmakerweb.com/products/rpg-maker-mv) powered web RPG game Blocklet demo.
 
+Note: this is a minimalist demo purpose game generated with RPG Maker just to showcase how you can use ABT Node to deploy and host online RPG games.   
 
 ## Install on my ABT Node
 
 [![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Frpgmaker-demo%2Freleases%2Fdownload%2F1.0.3%2Fblocklet.json)
-
-## Install on my ABT Node
-
-[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=)
 
 ## Run and debug in the cloud with Gitpod
 
