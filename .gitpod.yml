@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: abtnode init -f --mode debug --no-https
+    command: abtnode start && abtnode dev
+ports:
+  - port: 8080
+    onOpen: ignore
+  - port: 8089
+    onOpen: ignore
+  - port: 8090
+    onOpen: ignore
