@@ -1,3 +1,7 @@
+## 1.0.6 (February 26, 2021)
+
+
+
 ## 1.0.5 (February 26, 2021)
 
 - fix screen shots can not load
