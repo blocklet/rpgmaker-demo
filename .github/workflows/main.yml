@@ -1,0 +1,29 @@
+name: Npm deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Deploy:
+
+    runs-on: ubuntu-latest
+
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
+
+    steps:
+
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Deploy
+      env:
+        STAGING_REGISTRY: ${{ secrets.STAGING_REGISTRY }}
+        ABTNODE_DEV_STAGING_SK: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
+      run: bash ./tools/publish.sh
+
+    - name: Release to Github
+      uses: blocklet/action-release-to-github@v1.0.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}

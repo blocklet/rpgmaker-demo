@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf .blocklet",
-    "bundle": "npm run clean && abtnode bundle --create-release",
-    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle"
+    "bundle": "npm run clean && blocklet bundle --create-release",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",
+    "release": "npm run clean && npm run bundle"
   }
 }

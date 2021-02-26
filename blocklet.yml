@@ -8,10 +8,16 @@ author:
 license: MIT
 main: www
 files:
+  - blocklet.md
+  - README.md
   - www
+keywords:
+  - dapp
+  - demo
+  - game
 description: 'RPG Maker Demo Blocklet, a simple web based RPG game.'
 group: static
-specVersion: 1.0.1
+specVersion: 1.0.2
 did: z8ia4ejtwVATdwMqF5f1uSjHkhp6K2t6DCJGR
 community: ''
 documentation: ''
@@ -24,9 +30,13 @@ interfaces:
     port: BLOCKLET_PORT
     protocol: tcp
 environments: []
-screenshots: []
+screenshots:
+  - cover.png
+  - game.png
 scripts: {}
 timeout:
   start: 10
-capabilities:
-  dynamicPathPrefix: false
+requirements:
+  abtnode: '>=1.1.0'
+  os: '*'
+  cpu: '*'
