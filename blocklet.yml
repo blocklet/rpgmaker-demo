@@ -8,6 +8,7 @@ author:
 license: MIT
 main: www
 files:
+  - screenshots
   - blocklet.md
   - README.md
   - www
@@ -31,8 +32,8 @@ interfaces:
     protocol: tcp
 environments: []
 screenshots:
-  - cover.png
-  - game.png
+  - 0-cover.png
+  - 1-game.png
 scripts: {}
 timeout:
   start: 10
