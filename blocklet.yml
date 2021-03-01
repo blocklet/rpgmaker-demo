@@ -1,4 +1,5 @@
 name: rpgmaker-demo
+title: RPG Maker Demo
 version: 1.0.6
 repository:
   type: git
