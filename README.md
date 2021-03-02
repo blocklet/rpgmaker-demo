@@ -9,7 +9,7 @@ Note: this is a minimalist demo purpose game generated with RPG Maker just to sh
 
 ## Install on my ABT Node
 
-[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Frpgmaker-demo%2Freleases%2Fdownload%2F1.0.6%2Fblocklet.json)
+[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Frpgmaker-demo%2Freleases%2Fdownload%2F1.0.7%2Fblocklet.json)
 
 ## Run and debug in the cloud with Gitpod
 
