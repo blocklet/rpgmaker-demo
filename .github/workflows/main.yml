@@ -1,4 +1,4 @@
-name: Npm deployment
+name: Blocklet workflow
 
 on:
   push:
@@ -7,23 +7,22 @@ on:
 
 jobs:
   Deploy:
-
     runs-on: ubuntu-latest
 
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
-    - name: Checkout repo
-      uses: actions/checkout@v2
+      - name: Set yarn cache
+        uses: c-hive/gha-yarn-cache@v2
 
-    - name: Deploy
-      env:
-        STAGING_REGISTRY: ${{ secrets.STAGING_REGISTRY }}
-        ABTNODE_DEV_STAGING_SK: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
-      run: bash ./tools/publish.sh
-
-    - name: Release to Github
-      uses: blocklet/action-release-to-github@v1.0.0
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Blocklet workflow
+        uses: blocklet/action-workflow@v0.2.2
+        with:
+          bundle-command: yarn release
+          skip-upload: false
+          registry-endpoint: ${{ secrets.STAGING_REGISTRY }}
+          developer-sk: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
