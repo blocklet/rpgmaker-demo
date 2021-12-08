@@ -16,10 +16,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Blocklet workflow
-        uses: blocklet/action-workflow@v0.2.2
+        uses: blocklet/action-workflow@v1.1
         with:
-          bundle-command: yarn release
           skip-upload: false
-          registry-endpoint: ${{ secrets.STAGING_REGISTRY }}
-          developer-sk: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
+          bundle-command: yarn release
+          store-endpoint: ${{ secrets.STORE_ENDPOINT_DEV }}
+          store-access-token: ${{ secrets.STORE_ACCESS_TOKEN_DEV }}
           github-token: ${{ secrets.GITHUB_TOKEN }}

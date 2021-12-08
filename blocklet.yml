@@ -1,5 +1,5 @@
 name: rpgmaker-demo
-version: 1.0.9
+version: 1.0.10
 repository:
   type: git
   url: 'git+ssh://git@github.com/blocklet/rpgmaker-demo.git'
@@ -19,7 +19,7 @@ keywords:
   - game
 description: 'RPG Maker Demo Blocklet, a simple web based RPG game.'
 group: static
-specVersion: 1.1.1
+specVersion: 1.2.0
 did: z8ia4ejtwVATdwMqF5f1uSjHkhp6K2t6DCJGR
 community: ''
 documentation: ''
@@ -42,9 +42,9 @@ requirements:
   abtnode: '>=1.1.0'
   os: '*'
   cpu: '*'
-charging:
-  price: 0
-  tokens: []
-  shares: []
-capabilities: {}
+payment:
+  price: []
+  share: []
+capabilities:
+  clusterMode: false
 children: []
