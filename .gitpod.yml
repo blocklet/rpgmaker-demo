@@ -1,8 +1,8 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: abtnode init -f --mode debug --no-https
-    command: abtnode start && blocklet dev
+  - init: blocklet server init -f --mode debug --no-https
+    command: blocklet server start && blocklet dev
 ports:
   - port: 8080
     onOpen: ignore
