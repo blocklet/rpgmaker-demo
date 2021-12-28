@@ -7,6 +7,10 @@
 
 Note: this is a minimalist demo purpose game generated with RPG Maker just to showcase how you can use Blocklet Server to deploy and host online RPG games.
 
+## Launch on Blocklet Server
+
+[![Launch on Blocklet Server](https://assets.arcblock.io/icons/launch_on_blocklet_server.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Frpgmaker-demo%2Freleases%2Fdownload%2Fv1.0.11%2Fblocklet.json)
+
 ## Run and debug in the cloud with Gitpod
 
 Click the "Open in Gitpod" button, Gitpod will start Blocklet Server and the blocklet.
