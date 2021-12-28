@@ -32,9 +32,9 @@ blocklet dev
 
 # Screenshots
 
-![cover](./screenshots/cover.png)
+![cover](./screenshots/0-cover.png)
 
-![game](./screenshots/game.png)
+![game](./screenshots/1-game.png)
 
 ## License
 
